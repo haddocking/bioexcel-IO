@@ -90,7 +90,7 @@ $ python calc-batch-hs.py dataset-250k.file
 # Scenario
  
  Processing these files quickly without straining the system will require extremely efficient I/O solutions.
-In order to evaluate this scenario we created a code that executes the following tasks:
+In order to evaluate this scenario we created a python script named `calc-batch-hs.py` that executes the following tasks:
 1. Extract the energy terms from the header of the files
 2. Calculate the HADDOCK score and 
 3. Write a sorted list which represents the final ranking. 
