@@ -97,4 +97,4 @@ In order to evaluate this scenario we created a python script named `calc-batch-
 
 ***
 
-This benchmark was created by Rodrigo Honorato @ Utrecht University // [BonvinLab](http://www.bonvinlab.org)
+This benchmark was created by Rodrigo Honorato and Alexandre Bonvin @ Utrecht University // [BonvinLab](http://www.bonvinlab.org)
