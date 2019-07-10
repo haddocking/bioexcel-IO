@@ -1,21 +1,30 @@
 # Download
 
-The datasets can be downloaded at {LINK}
+The datasets (5 of those containing eash 250k models) can be downloaded from {LINK}
+
+# Requirements
+
+* Python 3.x.x
 
 # Usage
 
-Requirements:
-* Python 3.x.x
+Unpack the datasets and create first a file list containing all models to be analysed.
+For example to analyse 250k models:
 
-Create a file list, ex:
 ```bash 
-$ ls -U -d dataset-01/* | head -n $i > dataset-01.file
+$ ls -U -d dataset-01/* | head -n $i > dataset-250k.file
 ```
+And to analyse 1 million models:
+
+```bash 
+$ ls -U -d dataset-0[1-5]/* | head -n $i > dataset-1M.file
+```
+
 
 Execute main code:
 
 ```bash
-$ python calc-batch-hs.py dataset-01.file
+$ python calc-batch-hs.py dataset-250k.file
 ```
 
 # Background
