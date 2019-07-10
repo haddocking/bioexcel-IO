@@ -59,11 +59,13 @@ For more information about the scoring, please refer to the [HADDOCK Manual](htt
 
 # Download
 
-The datasets (5 of those containing eash 250k models) can be downloaded from {LINK}
+The datasets (4 of those containing each 250k models) can be downloaded from {LINK PLACEHOLDER}
 
 # Requirements
 
 * Python 3.x.x
+* ~ 80 Gb (Compressed, 20Gb each)
+* ~ 375 Gb (Uncompressed, 93Gb each)
 
 # Usage
 
@@ -76,7 +78,7 @@ $ ls -U -d dataset-01/* | head -n $i > dataset-250k.file
 And to analyse 1 million models:
 
 ```bash 
-$ ls -U -d dataset-0[1-5]/* | head -n $i > dataset-1M.file
+$ ls -U -d dataset-0[1-4]/* | head -n $i > dataset-1M.file
 ```
 
 
