@@ -1,32 +1,3 @@
-# Download
-
-The datasets (5 of those containing eash 250k models) can be downloaded from {LINK}
-
-# Requirements
-
-* Python 3.x.x
-
-# Usage
-
-Unpack the datasets and create first a file list containing all models to be analysed.
-For example to analyse 250k models:
-
-```bash 
-$ ls -U -d dataset-01/* | head -n $i > dataset-250k.file
-```
-And to analyse 1 million models:
-
-```bash 
-$ ls -U -d dataset-0[1-5]/* | head -n $i > dataset-1M.file
-```
-
-
-Execute main code:
-
-```bash
-$ python calc-batch-hs.py dataset-250k.file
-```
-
 # Background
 The vast network of the interactome involves hundreds of thousands of protein-protein and other biomolecular complex interactions. 
 Malfunctions in this network are responsible for a plethora of diseases, which highlights the importance of understanding how it works on a deep level. 
@@ -85,6 +56,36 @@ The benchmark is composed of the results of applying HADDOCK to the cases of the
 
 The HADDOCK score itself is a linear combination of the extracted energetic components, weighted according to its stage (rigid-body, semi-flexible or water).
 For more information about the scoring, please refer to the [HADDOCK Manual](http://www.bonvinlab.org/software/haddock2.2/scoring/).
+
+# Download
+
+The datasets (5 of those containing eash 250k models) can be downloaded from {LINK}
+
+# Requirements
+
+* Python 3.x.x
+
+# Usage
+
+Unpack the datasets and create first a file list containing all models to be analysed.
+For example to analyse 250k models:
+
+```bash 
+$ ls -U -d dataset-01/* | head -n $i > dataset-250k.file
+```
+And to analyse 1 million models:
+
+```bash 
+$ ls -U -d dataset-0[1-5]/* | head -n $i > dataset-1M.file
+```
+
+
+Execute main code:
+
+```bash
+$ python calc-batch-hs.py dataset-250k.file
+```
+
 
 # Scenario
  
