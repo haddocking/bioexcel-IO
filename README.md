@@ -2,6 +2,22 @@
 
 The datasets can be downloaded at {LINK}
 
+# Usage
+
+Requirements:
+* Python 3.x.x
+
+Create a file list, ex:
+```bash 
+$ ls -U -d dataset-01/* | head -n $i > dataset-01.file
+```
+
+Execute main code:
+
+```bash
+$ python calc-batch-hs.py dataset-01.file
+```
+
 # Background
 The vast network of the interactome involves hundreds of thousands of protein-protein and other biomolecular complex interactions. 
 Malfunctions in this network are responsible for a plethora of diseases, which highlights the importance of understanding how it works on a deep level. 

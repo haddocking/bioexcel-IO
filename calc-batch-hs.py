@@ -2,6 +2,13 @@ import glob
 import sys
 import re
 
+"""
+ Calculates HADDOCK-score for a list of PDB structures
+ 
+Author: Rodrigo Honorato
+Date: 10-July-2019
+"""
+
 
 def create_targetlist(path):
 	""" Get the location of all PDB decoys  """
@@ -84,7 +91,6 @@ def output(result_list):
 
 
 def main():
-
 	if len(sys.argv) > 1:
 		target_f = sys.argv[1]
 	else:
